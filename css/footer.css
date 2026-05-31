@@ -1,13 +1,10 @@
-.section-footer {
-  background-color: #2e2f42;
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
 .section-footer .container {
+  background-color: #2e2f42;
+
   display: flex;
-  align-items: flex-start;
-  width: 1158px;
-  padding-right: 15px;
+  flex-direction: column;
+  gap: 72px;
+  align-items: center;
 }
 .footer-logo {
   font-family: 'Raleway', sans-serif;
@@ -17,13 +14,12 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #f4f4fd;
+  text-align: center;
 }
 .footer_text {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin-right: 120px;
-  min-width: 264px;
 }
 .footer-descr {
   font-size: 16px;
@@ -32,21 +28,27 @@
   color: #f4f4fd;
   max-width: 264px;
 }
-.footer_list_social {
-  display: flex;
-  gap: 16px;
-  padding-top: 16px;
-}
+
 .footer_social {
-  width: 208px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
+
 .footer-social_text {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
+  text-align: center;
 }
+.footer_list_social {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
 .footer_list_social-item {
   display: flex;
   justify-content: center;
@@ -67,13 +69,15 @@
 }
 
 .footer-subscribe {
-  margin-left: 83px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 .footer-subscribe-form {
-  margin-top: 16px;
   display: flex;
-  gap: 24px;
-  align-items: flex-end;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
 }
 
 .footer-subscribe-label {
@@ -84,6 +88,7 @@
   letter-spacing: 0.02em;
   color: #ffffff;
   width: 264px;
+  text-align: center;
 }
 .footer-subscribe-input {
   border: 1px solid #ffffff;
@@ -137,4 +142,44 @@
 .footer-subscribe-button:hover,
 .footer-subscribe-button:focus {
   background-color: #31d0aa;
+}
+@media screen and (min-width: 768px) {
+  .section-footer .container {
+    padding-right: 108px;
+    padding-left: 108px;
+  }
+
+  .footer-logo-social {
+    display: flex;
+    gap: 24px;
+  }
+  .footer-logo {
+    text-align: start;
+  }
+
+  .footer-social_text {
+    text-align: start;
+  }
+  .footer-subscribe-label {
+    text-align: start;
+  }
+  .footer-subscribe-form {
+    flex-direction: row;
+    gap: 24px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .section-footer .container {
+    flex-direction: row;
+    padding: 100px 156px;
+    gap: 83px;
+  }
+
+  .footer-logo-social {
+    gap: 120px;
+  }
+  .footer-descr {
+    min-width: 264px;
+  }
 }

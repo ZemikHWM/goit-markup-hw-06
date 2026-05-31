@@ -20,12 +20,13 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <header id="header" class="section section-header">
+    <header id="header" class="section-header">
       <div class="container">
-        <a href="./index.html" class="header-logo"
-          ><span class="logo-accent">WEB</span>STUDIO</a
-        >
         <nav class="header-nav">
+          <a href="./index.html" class="header-logo"
+            ><span class="logo-accent">WEB</span>STUDIO</a
+          >
+
           <ul class="header-nav-list">
             <li>
               <a href="#features" class="header-nav-item header-nav-active_item"
@@ -67,7 +68,7 @@
       </section>
       <!--#endregion hero-->
       <!--#region features-->
-      <section id="features" class="section-features section">
+      <section id="features" class="section-features">
         <div class="container">
           <h2 class="features-h2 sr-only">Our features</h2>
           <ul class="features-list">
@@ -124,7 +125,7 @@
       </section>
       <!--#endregion features-->
       <!--#region team-->
-      <section id="team" class="section-team section">
+      <section id="team" class="section-team">
         <div class="container">
           <h2 class="team-h2">Our Team</h2>
 
@@ -133,6 +134,7 @@
               <img
                 class="team-image"
                 src="./images/team-1.jpg"
+                srcset="./images/team-1.jpg 1x, ./images/team-1@2x.jpg 2x"
                 alt="men"
                 width="264"
                 height="260"
@@ -178,6 +180,7 @@
               <img
                 class="team-image"
                 src="./images/team-2.jpg"
+                srcset="./images/team-2.jpg 1x, ./images/team-2@2x.jpg 2x"
                 alt="men"
                 width="264"
                 height="260"
@@ -220,7 +223,8 @@
             <li class="team-item">
               <img
                 class="team-image"
-                src="./images/team-3.jpg"
+                src="./images//team-3.jpg"
+                srcset="./images/team-3.jpg 1x, ./images/team-3@2x.jpg 2x"
                 alt="women"
                 width="264"
                 height="260"
@@ -264,6 +268,7 @@
               <img
                 class="team-image"
                 src="./images/team-4.jpg"
+                srcset="./images/team-4.jpg 1x, ./images/team-4@2x.jpg 2x"
                 alt="men"
                 width="264"
                 height="260"
@@ -317,6 +322,10 @@
                 <img
                   class="portfolio-image"
                   src="./images/portfolio-1.jpg"
+                  srcset="
+                    ./images/portfolio-1.jpg    1x,
+                    ./images/portfolio-1@2x.jpg 2x
+                  "
                   alt="app picture"
                   width="360"
                   height="300"
@@ -339,6 +348,10 @@
                 <img
                   class="portfolio-image"
                   src="./images/portfolio-2.jpg"
+                  srcset="
+                    ./images/portfolio-2.jpg    1x,
+                    ./images/portfolio-2@2x.jpg 2x
+                  "
                   alt="app picture"
                   width="360"
                   height="300"
@@ -361,6 +374,10 @@
                 <img
                   class="portfolio-image"
                   src="./images/portfolio-3.jpg"
+                  srcset="
+                    ./images/portfolio-3.jpg    1x,
+                    ./images/portfolio-3@2x.jpg 2x
+                  "
                   alt="app picture"
                   width="360"
                   height="300"
@@ -383,6 +400,10 @@
                 <img
                   class="portfolio-image"
                   src="./images/portfolio-4.jpg"
+                  srcset="
+                    ./images/portfolio-4.jpg    1x,
+                    ./images/portfolio-4@2x.jpg 2x
+                  "
                   alt="app picture"
                   width="360"
                   height="300"
@@ -405,6 +426,10 @@
                 <img
                   class="portfolio-image"
                   src="./images/portfolio-5.jpg"
+                  srcset="
+                    ./images/portfolio-5.jpg    1x,
+                    ./images/portfolio-5@2x.jpg 2x
+                  "
                   alt="app picture"
                   width="360"
                   height="300"
@@ -427,6 +452,10 @@
                 <img
                   class="portfolio-image"
                   src="./images/portfolio-6.jpg"
+                  srcset="
+                    ./images/portfolio-6.jpg    1x,
+                    ./images/portfolio-6@2x.jpg 2x
+                  "
                   alt="app picture"
                   width="360"
                   height="300"
@@ -451,47 +480,49 @@
     </main>
     <footer id="footer" class="section-footer">
       <div class="container">
-        <div class="footer_text">
-          <a href="./index.html" class="footer-logo"
-            ><span class="logo-accent">WEB</span>STUDIO</a
-          >
-          <p class="footer-descr">
-            Increase the flow of customers and sales for your business with
-            digital marketing & growth solutions.
-          </p>
-        </div>
-        <div class="footer_social">
-          <p class="footer-social_text">Social media</p>
-          <ul class="footer_list_social">
-            <li class="footer_list_social-item">
-              <a href="" class="footer_list_social-item_link"
-                ><svg class="footer_social_icon" width="24px" height="24px">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer_list_social-item">
-              <a href="" class="footer_list_social-item_link"
-                ><svg class="footer_social_icon" width="24px" height="24px">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer_list_social-item">
-              <a href="" class="footer_list_social-item_link"
-                ><svg class="footer_social_icon" width="24px" height="24px">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer_list_social-item">
-              <a href="" class="footer_list_social-item_link"
-                ><svg class="footer_social_icon" width="24px" height="24px">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+        <div class="footer-logo-social">
+          <div class="footer_text">
+            <a href="./index.html" class="footer-logo"
+              ><span class="logo-accent">WEB</span>STUDIO</a
+            >
+            <p class="footer-descr">
+              Increase the flow of customers and sales for your business with
+              digital marketing & growth solutions.
+            </p>
+          </div>
+          <div class="footer_social">
+            <p class="footer-social_text">Social media</p>
+            <ul class="footer_list_social">
+              <li class="footer_list_social-item">
+                <a href="" class="footer_list_social-item_link"
+                  ><svg class="footer_social_icon" width="24px" height="24px">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer_list_social-item">
+                <a href="" class="footer_list_social-item_link"
+                  ><svg class="footer_social_icon" width="24px" height="24px">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer_list_social-item">
+                <a href="" class="footer_list_social-item_link"
+                  ><svg class="footer_social_icon" width="24px" height="24px">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer_list_social-item">
+                <a href="" class="footer_list_social-item_link"
+                  ><svg class="footer_social_icon" width="24px" height="24px">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="footer-subscribe">
           <p class="footer-subscribe-label">Subscribe</p>

@@ -31,18 +31,12 @@ ul {
 }
 
 .container {
-  width: 320px;
-  padding-left: 16px;
-  padding-right: 16px;
-  margin: 0 auto;
-  border: red 1px solid;
-}
-.section {
+  width: 100%;
   max-width: 320px;
-  padding-top: 96px;
-  padding-bottom: 96px;
+  padding: 96px 16px;
   margin: 0 auto;
 }
+
 img {
   display: block;
   max-width: 100%;
