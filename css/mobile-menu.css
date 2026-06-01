@@ -17,13 +17,18 @@
   left: 0;
   height: 100%;
   background-color: #ffffff;
-
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
   padding: 72px 24px 40px 16px;
 }
+
+.form-button-close {
+  position: absolute;
+}
+
 .mob-list-menu {
   display: flex;
   flex-direction: column;
