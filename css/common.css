@@ -54,3 +54,16 @@ img {
   clip-path: inset(100%);
   margin: -1px;
 }
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1440px;
+    padding-left: 156px;
+    padding-right: 156px;
+  }
+}

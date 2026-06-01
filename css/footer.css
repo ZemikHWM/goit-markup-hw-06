@@ -147,6 +147,11 @@
   .section-footer .container {
     padding-right: 108px;
     padding-left: 108px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 24px;
+    column-gap: 72px;
+    align-items: start;
   }
 
   .footer-logo-social {
@@ -172,14 +177,15 @@
 @media screen and (min-width: 1158px) {
   .section-footer .container {
     flex-direction: row;
+    flex-wrap: nowrap;
     padding: 100px 156px;
     gap: 83px;
   }
 
-  .footer-logo-social {
-    gap: 120px;
-  }
   .footer-descr {
     min-width: 264px;
+  }
+  .footer_social {
+    margin-left: 37px;
   }
 }

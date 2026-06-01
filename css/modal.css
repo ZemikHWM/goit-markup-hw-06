@@ -31,7 +31,7 @@
     0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background-color: #fcfcfc;
-  padding: 72px 24px 24px 24px;
+  padding: 72px 16px 24px 16px;
 }
 .form-button-close {
   display: flex;
@@ -207,5 +207,7 @@
 @media screen and (min-width: 768px) {
   .modal {
     width: 408px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }
