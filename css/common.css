@@ -33,7 +33,16 @@ ul {
 .container {
   width: 100%;
   max-width: 320px;
-  padding: 96px 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 0;
+  margin: 0 auto;
+}
+
+.section {
+  padding-top: 96px;
+  padding-bottom: 96px;
+  max-width: 320px;
   margin: 0 auto;
 }
 
@@ -56,16 +65,23 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .section {
+    max-width: 768px;
+  }
   .container {
     max-width: 768px;
   }
 }
 @media screen and (min-width: 1158px) {
-  .container {
+  .section {
     max-width: 1440px;
-    padding-left: 156px;
-    padding-right: 156px;
     padding-top: 120px;
     padding-bottom: 120px;
+  }
+
+  .container {
+    max-width: 1158px;
+    padding-left: 15;
+    padding-right: 15;
   }
 }

@@ -1,11 +1,14 @@
-.section-footer .container {
+.section-footer {
   background-color: #2e2f42;
+}
 
+.section-footer .container {
   display: flex;
   flex-direction: column;
   gap: 72px;
   align-items: center;
 }
+
 .footer-logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -175,13 +178,22 @@
     flex-direction: row;
     gap: 24px;
   }
+  .footer-subscribe-input {
+    width: 264px;
+  }
 }
 
 @media screen and (min-width: 1158px) {
+  .section-footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
   .section-footer .container {
     flex-direction: row;
     flex-wrap: nowrap;
-    padding: 100px 156px;
+    padding-right: 0;
+    padding-left: 0;
     gap: 83px;
   }
 
