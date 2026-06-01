@@ -1,0 +1,73 @@
+.mobmenu-overlay {
+  background-color: rgba(255, 255, 255, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  padding-top: 9px;
+
+  visibility: hidden;
+  pointer-events: none;
+  opacity: 0;
+}
+.mobmenu-overlay.is-open {
+  pointer-events: auto;
+  opacity: 1;
+  visibility: visible;
+}
+.mobmenu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 320px;
+  height: 100%;
+  background-color: #ffffff;
+
+  padding: 72px 24px 40px 16px;
+}
+.mob-list-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.mob-list-menu-item {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11111;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mob-list-menu-item:hover,
+.mob-list-menu-item:focus {
+  color: #404bbf;
+}
+
+.mob-contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 168px;
+}
+
+.mob-contacts-list-item {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #434455;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mob-contacts-list-item:hover,
+.mob-contacts-list-item:focus {
+  color: #4d5ae5;
+}
+.mob_list_social {
+  display: flex;
+  gap: 40px;
+  margin-top: 48px;
+}
